@@ -7,7 +7,6 @@ jobs:
       - TASK:
         - script: sudo apt-get install -y jq
         - script: ./IN/nexec-repo/gitRepo/build.sh
-      - OUT: nexec-img
     on_success:
       - script: echo 'success job :)'
     on_failure:
