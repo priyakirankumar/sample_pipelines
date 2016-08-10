@@ -6,6 +6,8 @@ jobs:
       - IN: microbase-img
       - TASK:
         - script: sudo apt-get install -y jq
+        - script: python --version
+        - script: pip list
         - script: ./IN/nexec-repo/gitRepo/build.sh
     on_success:
       - script: echo 'success job :)'
