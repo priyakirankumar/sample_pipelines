@@ -3,9 +3,9 @@ resources:
     type: image
     integration: "docker-subint"
     pointer:
-      sourceName: "shipimg/microbase"
+      sourceName: "ankul/microbase"
     seed:
-      versionName: latest
+      versionName: master.687
   
   - name: nexec-repo
     type: gitRepo
