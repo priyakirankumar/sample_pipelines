@@ -1,5 +1,5 @@
 triggers:
-   - name: trigger-dv-man
-     type: trigger
-     version:
-       counter: 1
+  - name: serial-trigger
+    type: trigger
+    version:
+      message: 'trigger 2 manifests at once. Triggered: 39-beta13'
