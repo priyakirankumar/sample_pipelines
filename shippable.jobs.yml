@@ -16,3 +16,4 @@ jobs:
         - script: tree -F IN
         - script: sleep 30
     on_success:
+      - script: echo "successfully completed"
