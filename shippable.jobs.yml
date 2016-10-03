@@ -7,7 +7,7 @@ jobs:
   - name: ecs-deploy-2
     type: deploy
     steps:
-      - IN: nginx-manifest
-      - IN: ecs-cluster
+      - IN: nginx-manifest-2
+      - IN: ecs-cluster-2
       - TASK: managed
         deployMethod: blueGreen
