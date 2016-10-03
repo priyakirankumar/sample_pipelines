@@ -10,4 +10,4 @@ jobs:
       - IN: nginx-manifest
       - IN: ecs-cluster
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: upgrade
