@@ -7,7 +7,7 @@ jobs:
   - name: ecs-deploy-3
     type: deploy
     steps:
-      - IN: nginx-manifest
+      - IN: nginx-manifest-3
       - IN: ecs-cluster
       - TASK: managed
         deployMethod: blueGreen
