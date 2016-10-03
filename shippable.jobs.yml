@@ -1,13 +1,13 @@
 jobs:
-  - name: nginx-manifest-3
+  - name: manifest-job
     type: manifest
     steps:
-      - IN: nginx-image
+      - IN: nginx-resource
 
-  - name: ecs-deploy-3
+  - name: deploy-job
     type: deploy
     steps:
-      - IN: nginx-manifest-3
-      - IN: ecs-cluster
+      - IN: manifest-job
+      - IN: ecs-resource
       - TASK: managed
         deployMethod: blueGreen
