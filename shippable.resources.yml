@@ -3,9 +3,9 @@ resources:
     type: image
     integration: "docker-subint"
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "ankul/nginx"
     seed:
-      versionName: latest
+      versionName: prod.11
 
   - name: ecs-resource
     type: cluster
