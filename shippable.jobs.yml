@@ -10,4 +10,4 @@ jobs:
       - IN: manifest-job
       - IN: ecs-resource
       - TASK: managed
-        deployMethod: blueGreen
+        deployMethod: upgrade
