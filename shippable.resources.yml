@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image
+  - name: nginx-resource
     type: image
     integration: "docker-subint"
     pointer:
@@ -7,7 +7,7 @@ resources:
     seed:
       versionName: latest
 
-  - name: ecs-cluster
+  - name: ecs-resource
     type: cluster
     integration: "ecs-iam-subint"
     pointer:
