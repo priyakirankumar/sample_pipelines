@@ -9,7 +9,7 @@ resources:
 
   - name: ecs-cluster
     type: cluster
-    integration: "ecs-iam-subint"
+    integration: "aws-subint"
     pointer:
       sourceName : "testCL"
       region: "us-west-2"
