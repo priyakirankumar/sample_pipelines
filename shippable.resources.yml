@@ -6,6 +6,14 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+      
+  - name: nginx-image-3
+    type: image
+    integration: "docker-subint"
+    pointer:
+      sourceName: "ankul/nginx"
+    seed:
+      versionName: prod.12
 
 #  - name: ecs-cluster-2
 #    type: cluster
