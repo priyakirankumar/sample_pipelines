@@ -1,5 +1,10 @@
 jobs:
-  - name: nginx-manifest-2
+  - name: --dasdas_saf.asfaadadssdafaf.atom.atom.atom.git.git.git
+    type: manifest
+    steps:
+      - IN: nginx-image
+
+  - name: dasdas_saf.as  faadadssdaf#121^^&a
     type: manifest
     steps:
       - IN: nginx-image
