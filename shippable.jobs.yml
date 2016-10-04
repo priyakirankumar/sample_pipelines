@@ -2,7 +2,7 @@ jobs:
   - name: nginx-manifest-2
     type: manifest
     steps:
-      - IN: nginx-image
+      - IN: nginx-image-2
 
 #  - name: ecs-deploy-2
 #    type: deploy
