@@ -4,10 +4,10 @@ jobs:
     steps:
       - IN: nginx-image-2
 
-  - name: nginx-manifest-3
-    type: manifest
-    steps:
-      - IN: nginx-image-3
+#  - name: nginx-manifest-3
+#    type: manifest
+#    steps:
+#      - IN: nginx-image-3
 
 #  - name: ecs-deploy-2
 #    type: deploy
