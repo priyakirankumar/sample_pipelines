@@ -11,5 +11,5 @@ resources:
     type: gitRepo
     integration: github-subint
     pointer:
-      #sourceName: ankul-shippable/sample_node
+      sourceName: ankul-shippable/sample_nodea
       branch: master
