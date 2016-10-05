@@ -9,7 +9,7 @@ resources:
 
   - name: sample-node
     type: gitRepo
-    integration: github-subinta
+    integration: github-subint
     pointer:
-      sourceName: ankul-shippable/sample_node
+      #sourceName: ankul-shippable/sample_node
       branch: master
