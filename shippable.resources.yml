@@ -12,4 +12,11 @@ resources:
     integration: github-subint
     pointer:
       sourceName: ankul-shippable/sample_node
-      branch: "maste#@## %^#$@@r"
+      branch: "master"
+
+  - name: sample-node-2
+    type: gitRepo
+    integration: github-subint
+    pointer:
+      sourceName: ankul-shippable/sample_node
+      branch: "master"
