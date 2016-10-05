@@ -3,4 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: sample_node
+      - IN: sample-node
