@@ -14,9 +14,9 @@ resources:
       sourceName: ankul-shippable/sample_node
       branch: "master"
 
-  - name: sample-node
+  - name: sample-c
     type: gitRepo
-    integration: github-subint
+    integration: gitlab-subint
     pointer:
-      sourceName: ankul-shippable/sample_node
-      branch: "master"
+      sourceName: ankul/sample_c
+      branch: master
