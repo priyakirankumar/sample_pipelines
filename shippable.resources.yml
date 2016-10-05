@@ -20,3 +20,10 @@ resources:
     pointer:
       sourceName: ankul/sample_c
       branch: master
+
+  - name: sample-pipeline
+    type: gitRepo
+    integration: gitlab-subint
+    pointer:
+      sourceName: ankul/sample_pipeline
+      branch: master
