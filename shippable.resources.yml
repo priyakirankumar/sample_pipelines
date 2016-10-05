@@ -7,6 +7,10 @@ resources:
     seed:
       versionName: latest
 
+  - name: docker-integration
+    type: integration
+    integration: "docker-subint"
+
   - name: sample-node
     type: gitRepo
     integration: github-subint
