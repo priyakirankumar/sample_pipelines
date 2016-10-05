@@ -8,8 +8,8 @@ resources:
       versionName: latest
 
   - name: sample-node
-#    type: gitRepos
-    integration: github-subint
+    type: gitRepo
+    integration: github-subinta
     pointer:
       sourceName: ankul-shippable/sample_node
       branch: master
