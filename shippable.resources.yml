@@ -12,4 +12,4 @@ resources:
     integration: github-subint
     pointer:
       sourceName: ankul-shippable/sample_node
-      branch: master
+      #branch: master
