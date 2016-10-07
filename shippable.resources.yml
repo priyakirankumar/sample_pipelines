@@ -6,10 +6,3 @@ resources:
       sourceName: "ankul/nginx"
     seed:
       versionName: prod.8
-      
-  - name: slack-notifications2
-    type: notification
-    integration: "slack-subint"
-    pointer:
-      recipients:
-        - "#test-5148"
