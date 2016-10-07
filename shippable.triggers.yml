@@ -1,5 +1,5 @@
 triggers:
-  - name: serial-trigger2
+  - name: serial-trigger3
     type: trigger
     version:
       message: 'trigger 2 manifests at once. Triggered: 39-beta13'
