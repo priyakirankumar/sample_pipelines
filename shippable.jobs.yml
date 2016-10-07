@@ -4,9 +4,12 @@ jobs:
     steps:
       - IN: serial-trigger2
       - TASK:
-        - script: sudo apt-get install tree
-        - script: tree -F IN
-        - script: sleep 30
+        - script: echo "sudo apt-get install tree" && sudo apt-get install tree
+        - script: echo "tree -F IN" && tree -F IN
+        - script: echo "sleep 30" && sleep 30
+        - script: echo "true1"
+        - script: echo "sleep 30" && sleep 30
+        - script: echo "true2"
     on_success:
       - script: echo "successfully completed"
       
