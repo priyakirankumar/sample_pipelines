@@ -1,8 +1,8 @@
 jobs:
-  - name: runSh-Job2
+  - name: runSh-Job3
     type: runSh
     steps:
-      - IN: serial-trigger2
+      - IN: serial-trigger3
       - TASK:
         - script: echo "sudo apt-get install tree" && sudo apt-get install tree
         - script: echo "tree -F IN" && tree -F IN
@@ -13,8 +13,8 @@ jobs:
     on_success:
       - script: echo "successfully completed"
       
-  - name: nginx-manifest-2
+  - name: nginx-manifest-3
     type: manifest
     steps:
-      - IN: nginx-image-prod82
-      - IN: runSh-Job2
+      - IN: nginx-image-prod83
+      - IN: runSh-Job3
