@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image-prod82
+  - name: nginx-image-prod83
     type: image
     integration: "docker-subint"
     pointer:
