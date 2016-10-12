@@ -4,7 +4,7 @@ jobs:
     steps:
       - IN: serial-trigger2
       - TASK:
-        - script: for NUM in `seq 1 1 300000`; do echo $NUM; done
+        - script: for NUM in `seq 1 1 600000`; do echo $NUM; done
     on_success:
       - script: echo "successfully completed"
       
