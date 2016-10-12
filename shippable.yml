@@ -1,6 +1,7 @@
 # Language setting
-language: node_js
-language: python
+language: 
+  - node_js
+  - python
 
 # Version number
 node_js:
