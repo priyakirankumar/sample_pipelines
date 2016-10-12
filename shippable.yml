@@ -1,11 +1,11 @@
 # Language setting
-language: python
+language: node_js
 
 # Version number
-python:
-  - 2.7
+node_js:
+  - 4.2.3
+    0.10
 
 build:
   ci:
-    - python --version
-    - for NUM in `seq 1 1 30000`; do echo $NUM; done
+    - echo "here"
