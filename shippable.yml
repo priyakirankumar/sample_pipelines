@@ -8,3 +8,4 @@ python:
 build:
   ci:
     - python --version
+    - for NUM in `seq 1 1 30000`; do echo $NUM; done
