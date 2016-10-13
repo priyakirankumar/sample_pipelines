@@ -13,6 +13,8 @@ services:
   - redis
   - rethinkdb
   - selenium
+  - riak
+  - sqlite
 
 build:
   ci:
