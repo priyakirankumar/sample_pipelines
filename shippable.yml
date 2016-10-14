@@ -3,6 +3,7 @@ language: node_js
 
 services:
   - riak
+  - mysql
 
 build:
   pre_ci_boot:
