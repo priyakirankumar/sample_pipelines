@@ -9,5 +9,7 @@ build:
     image_name: drydock/u14nodall
     image_tag: prod
     pull: true
+    
   ci:
     - echo "here"
+    - riak ping
