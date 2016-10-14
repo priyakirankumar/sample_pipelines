@@ -7,7 +7,7 @@ services:
 build:
   pre_ci_boot:
     image_name: drydock/u14nodall
-    image_tag: prod
+    image_tag: 2016.02
     pull: true
     
   ci:
