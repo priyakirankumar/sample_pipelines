@@ -2,13 +2,25 @@
 language: node_js
 
 services:
+  - cassandra
+  - couchdb
+  - elasticsearch
+  - memcached
+  - mongo
+  - mysql
+  - neo4j
+  - postgres
+  - rabbitmq
+  - redis
+  - rethinkdb
   - selenium
+  - riak
+  - sqlite
 
 build:
   pre_ci_boot:
     image_name: drydock/u14nodall
-    image_tag: 2016.02
+    image_tag: prod
     pull: true
-    
   ci:
     - echo "here"
