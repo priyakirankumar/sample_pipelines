@@ -7,4 +7,4 @@ build:
     image_tag: prod
     pull: true
   ci:
-    - echo "here"
+    - echo "here_askask_1"
