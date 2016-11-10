@@ -27,4 +27,4 @@ resources:
       labels:
         com.joyent.package: g4-highcpu-128M
       cmd:
-        - echo "true"
+        - echo true
