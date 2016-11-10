@@ -11,7 +11,7 @@ resources:
     type: cluster
     integration: "triton-subint"
     pointer:
-      region: "us-west-1"
+      region: "us-east-1"
 
   - name: docker-options-3
     type: dockerOptions
