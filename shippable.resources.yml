@@ -21,7 +21,7 @@ resources:
       cmd:
         - /bin/sh -c while true; do echo hello world; sleep 1; done
 
- - name: docker-options-3b
+  - name: docker-options-3b
     type: dockerOptions
     version:
       memory: 128
