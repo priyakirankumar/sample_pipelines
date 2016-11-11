@@ -3,4 +3,14 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: timer
+      
+  - name: nginx-manifest-4
+    type: manifest
+    steps:
+      - IN: nginx-manifest-3
+
+      
+  - name: nginx-manifest-5
+    type: manifest
+    steps:
+      - IN: nginx-manifest-4
