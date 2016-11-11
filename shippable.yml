@@ -8,3 +8,13 @@ python:
 build:
   ci:
     - python --version
+    
+
+integrations:
+  notifications:
+  
+    - integrationName: webhook-subint
+      type: webhook
+      payload:
+        - versionName=$BUILD_NUMBER 
+      on_success: always
