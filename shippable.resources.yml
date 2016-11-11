@@ -7,9 +7,7 @@ resources:
     seed:
       versionName: latest
 
-  - name: ecs-cluster
-    type: cluster
-    integration: "ecs-iam-subint"
-    pointer:
-      sourceName : "testCL"
-      region: "us-west-2"
+  - name: timer
+    type: time
+    seed:
+      interval: "*/1 * * * *"
