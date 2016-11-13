@@ -3,4 +3,3 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-4
-      - IN: timer-4
