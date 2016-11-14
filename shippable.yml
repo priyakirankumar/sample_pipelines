@@ -13,7 +13,7 @@ build:
 integrations:
   notifications:
   
-    - integrationName: webhook-subint
+    - integrationName: webhook-subint-2
       type: webhook
       payload:
         - versionName=$BUILD_NUMBER 
