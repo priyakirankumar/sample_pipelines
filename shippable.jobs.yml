@@ -4,4 +4,5 @@ jobs:
     steps:
       - IN: nginx-image-4
       - IN: timer-4
-      - IN: email-nots
+    on_success:
+      - NOTIFY: email-nots
