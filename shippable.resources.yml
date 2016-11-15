@@ -11,3 +11,10 @@ resources:
     type: time
     seed:
       interval: "*/2 * * * *"
+      
+  - name: email-nots
+    type: notification
+    pointer:
+      method: email
+      recipients: 
+        -  "ankul@shippable.com"
