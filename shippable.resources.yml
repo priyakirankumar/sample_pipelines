@@ -9,7 +9,7 @@ resources:
 
   - name: sample-pipeline
     type: gitRepo
-    integration: gitlab-subint
+    integration: github-subint
     pointer:
-      sourceName: ankul/sample_pipeline
+      sourceName: ankul-shippable/sample_pipelines
       branch: "bran/ch"
