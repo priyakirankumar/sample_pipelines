@@ -6,10 +6,3 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
-
-  - name: sample-pipeline
-    type: gitRepo
-    integration: github-subint
-    pointer:
-      sourceName: ankul-shippable/sample_pipelines
-      branch: "bran/ch"
