@@ -1,6 +1,13 @@
 jobs:
+  - name: jenkins-job
+    type: jenkinsJob
+    integration: "jenkins-subint"
+    pointer:
+      sourceName: "jenkins-job-2"  # This is the job name on Jenk
+    steps:
+      - OUT: "nginx-image"
+
   - name: nginx-manifest
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: sample-pipeline
