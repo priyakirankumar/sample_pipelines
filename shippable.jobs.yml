@@ -3,6 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image
-      - IN: sample-node
-      - IN: sample-c
       - IN: sample-pipeline
