@@ -3,6 +3,6 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-4
-#      - IN: timer-4
-#    on_success:
-#      - NOTIFY: email-nots
+      - IN: timer-4
+    on_success:
+      - NOTIFY: email-nots
