@@ -3,7 +3,6 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-3
-      - IN: docker-options-3
       - TASK: managed
 
   - name: triton-deploy-3
