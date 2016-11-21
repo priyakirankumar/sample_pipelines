@@ -8,3 +8,10 @@ build:
     pull: true
   ci:
     - echo "here_askask_1"
+    
+integrations:
+  notifications:
+    - integrationName: slack-subint
+      type: slack
+      recipients:
+        - "#test-5148"
