@@ -2,7 +2,7 @@ jobs:
   - name: nginx-manifest-4
     type: manifest
     steps:
-      - OUT: nginx-image-4
-      - IN: timer-4
+      - IN: nginx-image-4
+      - OUT: timer-4
     on_success:
       - NOTIFY: email-nots
