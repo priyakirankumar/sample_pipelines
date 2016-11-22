@@ -30,7 +30,7 @@ integrations:
       on_start: always
       
       
-    - integrationName: irc-subint
+    - integrationName: irc
       type: irc
       recipients:
         - "chat.freenode.net#test"
