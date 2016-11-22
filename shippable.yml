@@ -15,4 +15,4 @@ integrations:
       type: slack
       recipients:
         - "#test-5148"
-      on_success: always
+      on_start: always
