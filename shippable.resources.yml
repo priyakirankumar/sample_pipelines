@@ -7,6 +7,14 @@ resources:
     seed:
       versionName: latest
 
+  - name: nginx-image-4
+    type: image
+    integration: "docker-subint"
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
+
   - name: timer-4
     type: time
     seed:
