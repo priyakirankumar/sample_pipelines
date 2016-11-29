@@ -10,4 +10,4 @@ resources:
   - name: version-resource
     type: version
     seed:
-      versionName: "4.12.2"
+      versionName: "4.12.3"
