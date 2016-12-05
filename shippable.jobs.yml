@@ -13,4 +13,14 @@ jobs:
   - name: nginx-manifest-5
     type: manifest
     steps:
-      - IN: nginx-manifest-4
+      - IN: nginx-manifest-3
+
+  - name: nginx-manifest-6
+    type: manifest
+    steps:
+      - IN: nginx-manifest-3
+      
+  - name: nginx-manifest-7
+    type: manifest
+    steps:
+      - IN: nginx-manifest-3
