@@ -1,5 +1,5 @@
 triggers:
-   - name: trigger-dv-man
+   - name: trigger-dcl-general
      type: trigger
      version:
        counter: 1
