@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image-3
+  - name: image-dcl-general-1
     type: image
     integration: "docker-subint"
     pointer:
@@ -7,8 +7,21 @@ resources:
     seed:
       versionName: prod.10
 
-  - name: triton-cluster-3
-    type: cluster
-    integration: "triton-subint"
+  - name: image-dcl-general-2
+    type: image
+    integration: "docker-subint"
     pointer:
-      region: "us-east-1"
+      sourceName: "ankul/nginx"
+    seed:
+      versionName: prod.11
+
+  - name: replicas-dcl-general
+    type: replicas
+    version:
+      count: 2
+
+  - name: cluster-dcl-general
+    type: cluster
+    integration: "dcl-subint"
+    pointer:
+      sourceName: "default"
