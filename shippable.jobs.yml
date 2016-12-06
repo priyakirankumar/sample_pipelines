@@ -2,8 +2,9 @@ jobs:
   - name: manifest-dcl-general-1
     type: manifest
     steps:
-      - IN: image-dcl-general-1 
+      - IN: image-dcl-general-1
       - TASK: managed
+      - IN: trigger-dcl-general
 
   - name: manifest-dcl-general-2
     type: manifest
@@ -11,6 +12,7 @@ jobs:
       - IN: image-dcl-general-2
       - IN: replicas-dcl-general
       - TASK: managed
+      - IN: trigger-dcl-general
 
   - name: deploy-dcl-general
     type: deploy
