@@ -1,13 +1,21 @@
 jobs:
-  - name: nginx-manifest-3
+  - name: manifest-dcl-general-1
     type: manifest
     steps:
-      - IN: nginx-image-3
+      - IN: image-dcl-general-1 
       - TASK: managed
 
-  - name: triton-deploy-3
+  - name: manifest-dcl-general-2
+    type: manifest
+    steps:
+      - IN: image-dcl-general-2
+      - IN: replicas-dcl-general
+      - TASK: managed
+
+  - name: deploy-dcl-general
     type: deploy
     steps:
-      - IN: nginx-manifest-3
-      - IN: triton-cluster-3
+      - IN: manifest-dcl-general-1
+      - IN: manifest-dcl-general-2
+      - IN: cluster-dcl-general
       - TASK: managed
