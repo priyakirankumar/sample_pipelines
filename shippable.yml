@@ -11,36 +11,8 @@ build:
     
 integrations:
   notifications:
-    - integrationName: slack-subint
-      type: slack
-      recipients:
-        - "#test-5148"
-      on_start: always
-
-    - integrationName: email-subint
-      type: email
-      recipients:
-        - "ankul@shippable.com"
-      on_start: always
-      
-    - integrationName: hipchat-subint
-      type: hipchat
-      recipients:
-        - "#Ship-aye"
-      on_start: always
-      
-      
-    - integrationName: irc
-      type: irc
-      recipients:
-        - "chat.freenode.net#test"
-      on_start: always
-      
-      
     - integrationName: webhook-subint
       type: webhook
       payload:
-        - isPRBuild=$IS_PULL_REQUEST
-        - branchName=$BRANCH
-        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+        - versionName=$BUILD_NUMBER
       on_start: always
