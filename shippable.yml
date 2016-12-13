@@ -15,4 +15,4 @@ integrations:
       type: webhook
       payload:
         - versionName=$BUILD_NUMBER
-      on_start: always
+      on_success: always
