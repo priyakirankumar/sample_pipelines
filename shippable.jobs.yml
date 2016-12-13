@@ -1,23 +1,13 @@
 jobs:
-  - name: --dasdas_saf.asfaadadssdafaf.atom.git.git
+  - name: manifest-1
     type: manifest
     steps:
       - IN: nginx-image
 
-  - name: dasdas_saf.as.gittt
+  - name: manifest-2
     type: manifest
     steps:
-      - IN: nginx-image
-
-  - name: dasdas_saf.as faadadssda
-    type: manifest
-    steps:
-      - IN: nginx-image
-      
-  - name: dasdas_saf.asfaad.atomadssda
-    type: manifest
-    steps:
-      - IN: nginx-image
+      - IN: manifest-1
 
 #  - name: ecs-deploy-2
 #    type: deploy
