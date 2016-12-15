@@ -7,5 +7,5 @@ python:
 
 build:
   ci:
-#    - python --version
+    - python --version
     - echo $COMMIT_MESSAGE
