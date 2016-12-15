@@ -9,3 +9,9 @@ build:
   ci:
     - python --version
     - echo $COMMIT_MESSAGE
+    - echo $COMMITTER
+    - echo $LAST_AUTHOR
+    - echo $BRANCH
+    - echo $REPO_NAME
+    - echo $REPO_FULL_NAME
+    - echo $ORG_NAME
