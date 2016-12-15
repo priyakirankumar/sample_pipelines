@@ -8,4 +8,4 @@ python:
 build:
   ci:
     - python --version
-    - echo "error"
+    - echo $COMMIT_MESSAGE
