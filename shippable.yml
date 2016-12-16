@@ -7,7 +7,7 @@ python:
 
 build:
   ci:
-    - python --version
+#    - python --version
     - echo $COMMIT_MESSAGE
     - echo $COMMITTER
     - echo $LAST_AUTHOR
@@ -19,5 +19,5 @@ build:
     - echo $GIT_TAG_NAME
     - echo $BASE_BRANCH
     - echo $HEAD_BRANCH
-    - echo $HEAD_BRANCH
+    - echo $TRAVIS_BRANCH
     - echo $PULL_REQUEST_BASE_BRANCH
