@@ -15,3 +15,9 @@ build:
     - echo $REPO_NAME
     - echo $REPO_FULL_NAME
     - echo $ORG_NAME
+    - echo $RELEASE_NAME
+    - echo $GIT_TAG_NAME
+    - echo $BASE_BRANCH
+    - echo $HEAD_BRANCH
+    - echo $HEAD_BRANCH
+    - echo $PULL_REQUEST_BASE_BRANCH
