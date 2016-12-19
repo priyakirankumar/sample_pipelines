@@ -3,4 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-2
-      - IN: docker-integration-2
+      - IN: docker-integration
