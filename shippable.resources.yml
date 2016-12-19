@@ -1,5 +1,5 @@
 resources:
-  - name: nginx-image-4
+  - name: nginx-image-2
     type: image
     integration: "docker-subint"
     pointer:
@@ -7,22 +7,6 @@ resources:
     seed:
       versionName: latest
 
-  - name: nginx-image-4
-    type: image
+  - name: docker-integration
+    type: integration
     integration: "docker-subint"
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: latest
-
-  - name: timer-4
-    type: time
-    seed:
-      interval: "*/20 * * * *"
-      
-  - name: email-nots
-    type: notification
-    pointer:
-      method: email
-      recipients: 
-        -  "ankul@shippable.com"
