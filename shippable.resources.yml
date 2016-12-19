@@ -7,6 +7,6 @@ resources:
     seed:
       versionName: latest
 
-  - name: docker-integration-2
+  - name: docker-integration
     type: integration
     integration: "docker-subint"
