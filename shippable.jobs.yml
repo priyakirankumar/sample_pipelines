@@ -1,15 +1,6 @@
 jobs:
-  - name: nginx-manifest-4
+  - name: nginx-manifest-2
     type: manifest
     steps:
-      - IN: nginx-image-4
-    on_success:
-      - NOTIFY: email-nots
-
-  - name: nginx-manifest-4
-    type: manifest
-    steps:
-      - IN: nginx-image-4
-      - IN: timer-4
-    on_success:
-      - NOTIFY: email-nots
+      - IN: nginx-image-2
+      - IN: docker-integration
