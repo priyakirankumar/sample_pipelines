@@ -1,48 +1,6 @@
 jobs:
-  - name: nginx-manifest-3
+  - name: nginx-manifest-1
     type: manifest
     steps:
       - IN: nginx-image
-      
-  - name: nginx-manifest-4
-    type: manifest
-    steps:
-      - IN: nginx-manifest-3
-
-      
-  - name: nginx-manifest-5
-    type: manifest
-    steps:
-      - IN: nginx-manifest-3
-
-  - name: nginx-manifest-6
-    type: manifest
-    steps:
-      - IN: nginx-manifest-3
-      
-  - name: nginx-manifest-7
-    type: manifest
-    steps:
-      - IN: nginx-manifest-3
-
-
-  - name: nginx-manifest-8
-    type: manifest
-    steps:
-      - IN: nginx-image
-      
-  - name: nginx-manifest-9
-    type: manifest
-    steps:
-      - IN: nginx-image
-      
-  - name: nginx-manifest-10
-    type: manifest
-    steps:
-      - IN: nginx-image
-      
-      
-  - name: nginx-manifest-11
-    type: manifest
-    steps:
-      - IN: nginx-image
+      - IN: docker-integration
