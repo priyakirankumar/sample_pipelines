@@ -6,3 +6,7 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+      
+  - name: docker-integration
+    type: integration
+    integration: "docker-subint"
