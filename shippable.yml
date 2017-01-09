@@ -17,11 +17,11 @@ integrations:
         - "#test-5148"
       on_start: always
 
-    - integrationName: email-subint
-      type: email
-      recipients:
-        - "ankul@shippable.com"
-      on_start: always
+#    - integrationName: email-subint
+#      type: email
+#      recipients:
+#        - "ankul@shippable.com"
+#      on_start: always
       
 #    - integrationName: hipchat-subint
 #      type: hipchat
