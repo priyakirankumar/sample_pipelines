@@ -38,10 +38,10 @@ integrations:
 #      on_start: always
       
       
-#    - integrationName: webhook-subint
-#      type: webhook
-#      payload:
-#        - isPRBuild=$IS_PULL_REQUEST
-#        - branchName=$BRANCH
-#        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
-#      on_start: always
+    - integrationName: webhook-subint
+      type: webhook
+      payload:
+        - isPRBuild=$IS_PULL_REQUEST
+        - branchName=$BRANCH
+        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+      on_start: always
