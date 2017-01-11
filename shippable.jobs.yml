@@ -3,3 +3,4 @@ jobs:
     type: manifest
     steps:
       - IN: nginx-image-4-2
+      - IN: sample_java_ciJob
