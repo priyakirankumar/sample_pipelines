@@ -8,6 +8,7 @@ jobs:
     type: runSh
     steps:
       - IN: runSh-Job-2
+      - IN: nginx-image-4
       - TASK:
         - script: echo "true2"
     on_success:
