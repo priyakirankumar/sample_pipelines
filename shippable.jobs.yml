@@ -1,20 +1,33 @@
 jobs:
-  - name: runSh-Job3
+  - name: nginx-manifest-1
+    type: manifest
+    steps:
+      - IN: nginx-image-prod83
+
+  - name: runSh-Job-1
     type: runSh
     steps:
-      - IN: serial-trigger3
+      - IN: runSh-Job-2
       - TASK:
-        - script: echo "sudo apt-get install tree" && sudo apt-get install tree
-        - script: echo "tree -F IN" && tree -F IN
-        - script: echo "sleep 300" && sleep 300
-        - script: echo "true1"
-        - script: echo "sleep 30" && sleep 30
         - script: echo "true2"
     on_success:
       - script: echo "successfully completed"
       
-  - name: nginx-manifest-3
-    type: manifest
+  - name: runSh-Job-2
+    type: runSh
     steps:
-      - IN: nginx-image-prod83
-      - IN: runSh-Job3
+      - IN: nginx-manifest-1
+      - TASK:
+        - script: echo "true2"
+    on_success:
+      - script: echo "successfully completed"
+      
+  - name: runSh-Job-3
+    type: runSh
+    steps:
+      - IN: nginx-manifest-1
+      - TASK:
+        - script: echo "true2"
+    on_success:
+      - script: echo "successfully completed"
+      
