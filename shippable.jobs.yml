@@ -22,7 +22,7 @@ jobs:
       - TASK:
         - script: echo "true2"
     on_success:
-      - script: echo "successfully completed"
+      - script: echo "successfully completeded"
 
 #  - name: manifest-job
 #    type: manifest
