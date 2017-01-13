@@ -15,3 +15,11 @@ jobs:
         - script: echo "true2"
     on_success:
       - script: echo "successfully completed"
+      
+  - name: runSh-Job-3
+    type: runSh
+    steps:
+      - TASK:
+        - script: echo "true2"
+    on_success:
+      - script: echo "successfully completed"
