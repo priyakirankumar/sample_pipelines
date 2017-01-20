@@ -11,4 +11,4 @@ resources:
     type: cluster
     integration: "ddc-subint"
     pointer:
-      sourceName: "ankul-ddc"
+      sourceName: "ddc-cluster"
