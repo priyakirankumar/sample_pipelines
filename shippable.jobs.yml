@@ -5,9 +5,9 @@ jobs:
       - IN: nginx-image-3
       - TASK: managed
 
-  - name: triton-deploy-3
+  - name: ddc-deploy-3
     type: deploy
     steps:
       - IN: nginx-manifest-3
-      - IN: triton-cluster-3
+      - IN: ddc-cluster-3
       - TASK: managed
