@@ -7,8 +7,8 @@ resources:
     seed:
       versionName: prod.10
 
-  - name: triton-cluster-3
+  - name: ddc-cluster-3
     type: cluster
-    integration: "triton-subint"
+    integration: "ddc-subint"
     pointer:
-      region: "us-east-1"
+      sourceName: "ankul-ddc"
