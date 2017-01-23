@@ -3,7 +3,7 @@ jobs:
     type: jenkinsJob
     integration: "jenkins-subint"
     pointer:
-      sourceName: "test-proj"  # This is the job name on Jenk
+      sourceName: "sample_jenkins"  # This is the job name on Jenk
     steps:
       - OUT: "nginx-image"
 
