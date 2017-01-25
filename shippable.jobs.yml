@@ -15,4 +15,4 @@ jobs:
         - script: sleep 300
     on_success:
       - script: echo "successfully completed"
-      - NOTIFY: hipchat-resource
+      - NOTIFY: hipchat-notifications
