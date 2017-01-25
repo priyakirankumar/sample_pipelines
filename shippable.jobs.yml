@@ -8,8 +8,6 @@ jobs:
   - name: runSh-Job
     type: runSh
     steps:
-      - IN: serial-trigger
-      - IN: nginx-image-prod81
       - IN: nginx-manifest-1
       - TASK:
         - script: sudo apt-get install tree
@@ -17,3 +15,4 @@ jobs:
         - script: sleep 300
     on_success:
       - script: echo "successfully completed"
+      - NOTIFY: hipchat-resource
