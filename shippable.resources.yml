@@ -7,9 +7,9 @@ resources:
     seed:
       versionName: prod.8
       
-#  - name: slack-notifications
-#    type: notification
-#    integration: "slack-subint"
-#    pointer:
-#      recipients:
-#        - "#test-5148"
+  - name: hipchat-notifications
+    type: notification
+    integration: "hipchat-subint"
+    pointer:
+      recipients:
+        - "#Ship-aye"
