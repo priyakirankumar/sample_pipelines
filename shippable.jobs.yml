@@ -5,14 +5,21 @@ jobs:
       - IN: serial-trigger
       - IN: nginx-image-prod81
 
-  - name: runSh-Job
+#  - name: runSh-Job
+#    type: runSh
+#    steps:
+#      - IN: nginx-manifest-1
+#      - TASK:
+#        - script: sudo apt-get install tree
+#        - script: tree -F IN
+#        - script: sleep 300
+#    on_success:
+#      - script: echo "successfully completed"
+#      - NOTIFY: hipchat-notifications
+
+  - name: do_something
     type: runSh
     steps:
-      - IN: nginx-manifest-1
+      - IN: nginx-image-prod81
       - TASK:
-        - script: sudo apt-get install tree
-        - script: tree -F IN
-#        - script: sleep 300
-    on_success:
-      - script: echo "successfully completed"
-      - NOTIFY: hipchat-notifications
+        - script: docker images | grep busybox
