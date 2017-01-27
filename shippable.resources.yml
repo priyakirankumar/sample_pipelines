@@ -6,6 +6,8 @@ resources:
       sourceName: "ankul/nginx"
     seed:
       versionName: prod.8
+    flags:
+      - images 
       
 #  - name: hipchat-notifications
 #    type: notification
@@ -13,3 +15,10 @@ resources:
 #    pointer:
 #      recipients:
 #        - "#Ship-aye"
+
+ - name: dv-scaler
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - replicas
