@@ -7,9 +7,9 @@ resources:
     seed:
       versionName: prod.8
       
-  - name: hipchat-notifications
-    type: notification
-    integration: "hipchat-subint"
-    pointer:
-      recipients:
-        - "#Ship-aye"
+#  - name: hipchat-notifications
+#    type: notification
+#    integration: "hipchat-subint"
+#    pointer:
+#      recipients:
+#        - "#Ship-aye"
