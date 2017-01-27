@@ -6,7 +6,7 @@ jobs:
     flags:
       - manifests 
 
-  - name: sample---1
+  - name: sample-runSh
     type: runSh
     steps:
       - IN: nginx-image-prod81
