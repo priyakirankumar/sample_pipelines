@@ -9,7 +9,7 @@ jobs:
   - name: sample-runSh
     type: runSh
     steps:
-      - IN: nginx-image-prod81
+      - IN: dv-scaler
       - TASK:
         - script: docker images | grep busybox
     flags:
