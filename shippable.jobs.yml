@@ -17,7 +17,7 @@ jobs:
 #      - script: echo "successfully completed"
 #      - NOTIFY: hipchat-notifications
 
-  - name: do_something
+  - name: sample---1
     type: runSh
     steps:
       - IN: nginx-image-prod81
