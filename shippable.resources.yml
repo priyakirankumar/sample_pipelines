@@ -8,17 +8,17 @@ resources:
       versionName: prod.8
     flags:
       - images 
-      
+ 
+  - name: dv-scaler
+    type: replicas
+    version:
+      count: 1
+    flags:
+      - replicas
+
 #  - name: hipchat-notifications
 #    type: notification
 #    integration: "hipchat-subint"
 #    pointer:
 #      recipients:
 #        - "#Ship-aye"
-
- - name: dv-scaler
-    type: replicas
-    version:
-      count: 1
-    flags:
-      - replicas
