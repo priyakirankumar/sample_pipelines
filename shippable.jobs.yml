@@ -4,6 +4,8 @@ jobs:
     steps:
       - IN: serial-trigger
       - IN: nginx-image-prod81
+    flags:
+      - manifests 
 
 #  - name: runSh-Job
 #    type: runSh
@@ -23,3 +25,5 @@ jobs:
       - IN: nginx-image-prod81
       - TASK:
         - script: docker images | grep busybox
+    flags:
+      - runSh 
