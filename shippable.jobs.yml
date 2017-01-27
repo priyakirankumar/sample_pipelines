@@ -7,6 +7,15 @@ jobs:
     flags:
       - manifests 
 
+  - name: sample---1
+    type: runSh
+    steps:
+      - IN: nginx-image-prod81
+      - TASK:
+        - script: docker images | grep busybox
+    flags:
+      - runSh 
+
 #  - name: runSh-Job
 #    type: runSh
 #    steps:
@@ -18,12 +27,3 @@ jobs:
 #    on_success:
 #      - script: echo "successfully completed"
 #      - NOTIFY: hipchat-notifications
-
-  - name: sample---1
-    type: runSh
-    steps:
-      - IN: nginx-image-prod81
-      - TASK:
-        - script: docker images | grep busybox
-    flags:
-      - runSh 
