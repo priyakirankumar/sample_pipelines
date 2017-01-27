@@ -3,7 +3,6 @@ jobs:
     type: manifest
     steps:
       - IN: serial-trigger
-      - IN: nginx-image-prod81
     flags:
       - manifests 
 
