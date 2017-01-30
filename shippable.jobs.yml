@@ -10,7 +10,7 @@ jobs:
     steps:
       - IN: nginx-image-10
 
-  - name: ecs-deploy-3
+  - name: ecs-deploy
     type: deploy
     steps:
       - IN: nginx-manifest-9
