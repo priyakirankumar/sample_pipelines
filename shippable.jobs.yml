@@ -17,4 +17,4 @@ jobs:
       - IN: nginx-manifest-10
       - IN: ecs-cluster
       - TASK: managed
-        deployMethod: upgrade
+        deployMethod: replace
