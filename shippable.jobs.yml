@@ -4,10 +4,16 @@ jobs:
     steps:
       - IN: nginx-image
 
+  - name: nginx-manifest-4
+    type: manifest
+    steps:
+      - IN: nginx-image
+
   - name: ecs-deploy-3
     type: deploy
     steps:
       - IN: nginx-manifest-3
+      - IN: nginx-manifest-4
       - IN: ecs-cluster
       - TASK: managed
         deployMethod: upgrade
