@@ -1,11 +1,24 @@
 resources:
-  - name: nginx-image
+  - name: nginx-image-9
+    type: image
+    integration: "docker-subint"
+    pointer:
+      sourceName: "ankul/nginx"
+    seed:
+      versionName: prod.9
+
+  - name: nginx-image-10
     type: image
     integration: "docker-subint"
     pointer:
       sourceName: "ankul/nginx"
     seed:
       versionName: prod.10
+
+  - name: replicas-resource
+    type: replicas
+    version:
+      count: 2
 
   - name: ecs-cluster
     type: cluster
