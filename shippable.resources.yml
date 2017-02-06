@@ -1,8 +1,15 @@
 resources:
-  - name: nginx-image-4
+  - name: nginx-image
     type: image
     integration: "docker-subint"
     pointer:
-      sourceName: "library/nginx"
+      sourceName: "ankul/nginx"
     seed:
-      versionName: latest
+      versionName: prod.10
+
+  - name: sample-pipelines_runCI
+    type: gitRepo
+    integration: "github-subint"
+    pointer:
+      sourceName: ankul-shippable/sample_pipelines
+      branch: "runCI"
