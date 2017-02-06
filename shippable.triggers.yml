@@ -1,5 +1,0 @@
-triggers:
-   - name: trigger-4
-     type: trigger
-     version:
-       counter: 1
