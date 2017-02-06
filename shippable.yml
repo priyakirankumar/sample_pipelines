@@ -12,9 +12,32 @@ build:
 
 integrations:
   notifications:
-  
-    - integrationName: webhook-subint
-      type: webhook
-      payload:
-        - versionName=$BUILD_NUMBER 
-      on_start: always
+    - integrationName: slack-subint
+      type: slack
+      recipients:
+        - "#test-5148"
+      on_success: always
+
+    - integrationName: email-subint
+      type: email
+      recipients:
+        - "ankul@shippable.com"
+      on_success: always
+      
+#    - integrationName: hipchat-subint
+#      type: hipchat
+#      recipients:
+#        - "#Ship-aye"
+#      on_start: always
+      
+      
+#    - integrationName: irc
+#      type: irc
+#      recipients:
+#        - "chat.freenode.net#test"
+#      on_start: always
+
+  hub:
+    - integrationName: docker-subint
+      type: docker
+      on_success: always
