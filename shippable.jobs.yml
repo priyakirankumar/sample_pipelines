@@ -7,5 +7,5 @@ jobs:
   - name: runCI-job
     type: runCI
     steps:
-      - IN: sample-pipelines_runCI
+      - IN: pipelines_runCI
       - OUT: nginx-image
