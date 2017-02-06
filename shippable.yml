@@ -8,7 +8,7 @@ build:
     pull: true
   ci:
     - echo "here_askask_1"
-#    - hmmmmdasd $`fsdfdmm`
+    - echo "there"
     
 integrations:
   notifications:
