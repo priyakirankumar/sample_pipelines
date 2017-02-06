@@ -1,5 +1,11 @@
 jobs:
-  - name: nginx-manifest-4
+  - name: nginx-manifest
     type: manifest
     steps:
-      - IN: nginx-image-4
+      - IN: nginx-image
+
+  - name: runCI-job
+    type: runCI
+    steps:
+      - IN: sample-pipelines_runCI
+      - OUT: nginx-image
