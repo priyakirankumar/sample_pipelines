@@ -8,6 +8,7 @@ python:
 build:
   ci:
     - python --version
+    - echo "test1"
     
 
 integrations:
