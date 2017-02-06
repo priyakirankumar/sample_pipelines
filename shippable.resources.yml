@@ -7,7 +7,7 @@ resources:
     seed:
       versionName: prod.10
 
-  - name: sample-pipelines_runCI
+  - name: pipelines_runCI
     type: gitRepo
     integration: "github-subint"
     pointer:
