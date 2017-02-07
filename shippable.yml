@@ -8,7 +8,7 @@ build:
     pull: true
   ci:
     - echo "here_askask_1"
-    - echo "there"
+    - echo "there_1"
     
 integrations:
   notifications:
