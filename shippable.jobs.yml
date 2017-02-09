@@ -7,7 +7,6 @@ jobs:
   - name: runSh-Job
     type: runSh
     steps:
-      - IN: nginx-manifest-1
       - TASK:
         - script: sudo apt-get install tree
         - script: tree -F IN
