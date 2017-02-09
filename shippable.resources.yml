@@ -7,9 +7,9 @@ resources:
     seed:
       versionName: prod.10
 
-  - name: pipelines_runCI
-    type: gitRepo
-    integration: "github-subint"
-    pointer:
-      sourceName: ankul-shippable/sample_pipelines
-      branch: "runCI"
+#  - name: pipelines_runCI
+#    type: gitRepo
+#    integration: "github-subint"
+#    pointer:
+#      sourceName: ankul-shippable/sample_pipelines
+#      branch: "runCI"
