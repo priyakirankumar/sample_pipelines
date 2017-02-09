@@ -15,7 +15,7 @@ jobs:
     on_success:
       - script: echo "successfully completed"
 
-  - name: runCI-Job             #sample_pipelines_runCI
+  - name: sample_pipelines_runCI
     type: runCI
     steps:
       - IN: runSh-Job
