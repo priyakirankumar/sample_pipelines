@@ -14,8 +14,8 @@ jobs:
     on_success:
       - script: echo "successfully completed"
 
-  - name: sample_pipelines_runCI
-    type: runCI
-    steps:
-      - IN: runSh-Job
+#  - name: sample_pipelines_runCI
+#    type: runCI
+#    steps:
+#      - IN: runSh-Job
 #      - OUT: nginx-image
