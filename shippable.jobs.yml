@@ -14,7 +14,7 @@ jobs:
     steps:
       - IN: runSh-Job-trace
       - OUT: nginx-image-trace
-      - OUT: sample_java_runCI
+      - OUT: nginx-image-trace-2
   
   - name: nginx-manifest-trace
     type: manifest
