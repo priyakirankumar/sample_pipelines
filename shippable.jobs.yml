@@ -12,9 +12,9 @@ jobs:
   - name: sample_pipelines_runCI
     type: runCI
     steps:
-      - IN: runSh-Job-trace
-      - OUT: nginx-image-trace
-      - OUT: nginx-image-trace-2
+#      - IN: runSh-Job-trace
+#      - OUT: nginx-image-trace
+      - OUT: sample_java_runCI
   
   - name: nginx-manifest-trace
     type: manifest
