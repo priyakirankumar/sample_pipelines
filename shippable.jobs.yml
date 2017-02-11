@@ -1,22 +1,5 @@
-jobs:
-  - name: runSh-Job-trace
-    type: runSh
-    steps:
-      - TASK:
-        - script: sudo apt-get install tree
-        - script: tree -F IN
-        - script: sleep 300
-    on_success:
-      - script: echo "successfully completed"
-  
+jobs:  
   - name: sample_pipelines_runCI
     type: runCI
     steps:
-#      - IN: runSh-Job-trace
-#      - OUT: nginx-image-trace
       - OUT: sample_java_runCI
-  
-  - name: nginx-manifest-trace
-    type: manifest
-    steps:
-      - IN: nginx-image-trace
