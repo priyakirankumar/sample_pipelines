@@ -6,3 +6,11 @@ resources:
       sourceName: "library/nginx"
     seed:
       versionName: latest
+
+  - name: nginx-image-trace-2
+    type: image
+    integration: "docker-subint"
+    pointer:
+      sourceName: "library/nginx"
+    seed:
+      versionName: latest
