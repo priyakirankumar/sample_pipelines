@@ -12,8 +12,7 @@ resources:
     version:
       params:
         APP_URL: "localhost:3000"
-        secure: zAPwCLRO9LGGv4LsgnsSXw7BRjH/AdWuRApKIJWMqlZBunMRuHTIZnwWSJlVV18HAeEzg3qw4U8pv1nfsnuWMnZHs7xHgCeC7h4Nivb/Yqp1bGKLidqNOUZryeZ+FYTLe3D5E5M9mladODo+8oGGt2c5dDh1zyWMGlMhSMs88ZW0QnrD/RdyAPW9NKDNfe59RT48F7LOYwR0PjliS06HCjnjM5J92P4pwaQ5XLLeKrR5ot7ERaLlnI22OS0ZDuxkUmuWQTuEQKZe71Elsk93ucQFKlpTdSiSf/bME10O8R8VvKlTbPY6CXiF0TxmxiRabjve6qVNwNOgIXH2O4Mlqg==
-  
+        secure: olrPZEp/nYy7LCvxraCg73lFPv3rYXWVxb6hikuvs0foia7CFbfrNHopQs66pj8W8vu4NqwDD0tNfIogT2ec5uUOMwheSpTVVWzCEeVhGzmefnU5no64HpMAZar9wcVZgKgE1tbSNOXw0CWVn1GabgxawEKprPOnFD8+oMokJP5wp3ukrF9bq55Qh34tHjn5IRsF/PMXq64slQEEUlhBquZpLKgLjKs6eQCBb7GvlZ29hLapuC7nwVmGekSg4HH7E6gsop/KSQ0G3en4btaNBbvddGVXq355qXG4cyHTeI8Qop/s6u5Mqj5InZElBTRjrwd9xv18gVWK67zO0B0kDQ==
   - name: docker-integration
     type: integration
     integration: "kanthchandra-docker" 
