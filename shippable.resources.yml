@@ -13,6 +13,6 @@ resources:
       params:
         secure: aN5VH0Lazomdj8O7bf75wj7UcFQvwwGog1xKPfs4iwNt8z6sT6qcWx1bDfECNJPczIJkQLZ/HPR3q7ogHCAIcRo13pWWNTxlmYcsF/YRahbfby4G65FQRAd9JE5CE4ZerVsvxITMpkqQWm0aGxmN3YMqkyajKsMjCSmfh0901QfJwj+NuhRaX0v2baSLoG1tlbdoeeflGqUAgdneRJEjaJvvDzG1nu+/5i8wnza00s5rIdxeJIY30fLMYESsroGTrJhjsGk97hW65XGOxC2BkrYO2eNYCFp3qqL/sZ/tiXxawL/J5Xmg6VG/gRT8g6tX/DlwqQK/cqeo9XIOWc6JYQ==
   
-  - name: docker-integrations
+  - name: docker-integration
     type: integration
     integration: "docker-integration" 
