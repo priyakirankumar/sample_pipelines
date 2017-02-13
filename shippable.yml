@@ -3,7 +3,7 @@ language: node_js
 
 build:
   pre_ci_boot:
-    image_name: drydock/u14nodall
+    image_name: drydock/u14nod
     image_tag: prod
     pull: true
   ci:
@@ -11,12 +11,12 @@ build:
     - echo "there_1"
     
 integrations:
-  notifications:
-    - integrationName: slack-subint
-      type: slack
-      recipients:
-        - "#test-5148"
-      on_start: always
+  hub:
+    - integrationName: kanthchandra
+      type: docker
+#      recipients:
+#        - "#test-5148"
+#      on_start: always
 
 #    - integrationName: email-subint
 #      type: email
