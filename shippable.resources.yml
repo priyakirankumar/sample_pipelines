@@ -1,9 +1,9 @@
 resources:
   - name: nginx-image
     type: image
-    integration: "docker-subint"
+    integration: "kanthchandra-docker"
     pointer:
-      sourceName: "ankul/nginx"
+      sourceName: "kanthchandra/nginx"
     seed:
       versionName: prod.10
 
@@ -12,8 +12,8 @@ resources:
     version:
       params:
         APP_URL: "localhost:3000"
-        secure: aN5VH0Lazomdj8O7bf75wj7UcFQvwwGog1xKPfs4iwNt8z6sT6qcWx1bDfECNJPczIJkQLZ/HPR3q7ogHCAIcRo13pWWNTxlmYcsF/YRahbfby4G65FQRAd9JE5CE4ZerVsvxITMpkqQWm0aGxmN3YMqkyajKsMjCSmfh0901QfJwj+NuhRaX0v2baSLoG1tlbdoeeflGqUAgdneRJEjaJvvDzG1nu+/5i8wnza00s5rIdxeJIY30fLMYESsroGTrJhjsGk97hW65XGOxC2BkrYO2eNYCFp3qqL/sZ/tiXxawL/J5Xmg6VG/gRT8g6tX/DlwqQK/cqeo9XIOWc6JYQ==
+        secure: zAPwCLRO9LGGv4LsgnsSXw7BRjH/AdWuRApKIJWMqlZBunMRuHTIZnwWSJlVV18HAeEzg3qw4U8pv1nfsnuWMnZHs7xHgCeC7h4Nivb/Yqp1bGKLidqNOUZryeZ+FYTLe3D5E5M9mladODo+8oGGt2c5dDh1zyWMGlMhSMs88ZW0QnrD/RdyAPW9NKDNfe59RT48F7LOYwR0PjliS06HCjnjM5J92P4pwaQ5XLLeKrR5ot7ERaLlnI22OS0ZDuxkUmuWQTuEQKZe71Elsk93ucQFKlpTdSiSf/bME10O8R8VvKlTbPY6CXiF0TxmxiRabjve6qVNwNOgIXH2O4Mlqg==
   
   - name: docker-integration
     type: integration
-    integration: "docker-integration" 
+    integration: "kanthchandra-docker" 
