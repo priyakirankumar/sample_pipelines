@@ -9,6 +9,10 @@ build:
   ci:
     - echo "here_askask_1"
     - echo "there_1"
+  on_success:
+    - printenv
+    - cat /build/common.env
+  on_success:
     - printenv
     - cat /build/common.env
     
