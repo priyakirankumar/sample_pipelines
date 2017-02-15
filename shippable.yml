@@ -9,6 +9,7 @@ build:
   ci:
     - echo "here_askask_1"
     - echo "there_1"
+    - printenv
     
 integrations:
   hub:
