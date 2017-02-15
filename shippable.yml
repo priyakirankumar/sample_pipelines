@@ -10,6 +10,7 @@ build:
     - echo "here_askask_1"
     - echo "there_1"
     - printenv
+    - cat /build/common.env
     
 integrations:
   hub:
