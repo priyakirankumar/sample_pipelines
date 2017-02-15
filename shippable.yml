@@ -12,7 +12,7 @@ build:
   on_success:
     - printenv
     - cat /build/common.env
-  on_success:
+  on_failure:
     - printenv
     - cat /build/common.env
     
