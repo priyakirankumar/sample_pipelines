@@ -16,3 +16,10 @@ resources:
   - name: docker-integration
     type: integration
     integration: "kanthchandra-docker" 
+  
+  - name: ck_gitrepo
+    type: gitRepo
+    integration: kanthchandra-github
+    pointer:
+      sourceName: kanthchandra/c-Sample-
+    branch: "master"
