@@ -24,6 +24,15 @@ jobs:
       - IN: docker-integration
       - OUT: nginx-image
 
+  - name: ck-runSh
+    type: runSh
+    steps:
+      - IN: ck_gitrepo
+      - TASK:
+        - script: echo CK_GITREPO_PATH
+        - script: printenv
+    flags:
+      - runSh 
 #  - name: sample_node_runCI
 #    type: runCI
 #    steps:
