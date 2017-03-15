@@ -22,4 +22,4 @@ resources:
     integration: kanthchandra-github
     pointer:
       sourceName: kanthchandra/sample_node
-    branch: "master"
+      branch: "master"
