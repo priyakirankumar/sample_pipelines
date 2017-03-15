@@ -32,7 +32,13 @@ jobs:
         - script: echo CK_GITREPO_PATH
         - script: printenv
     flags:
-      - runSh 
+      - runSh
+
+  - name: ck-manifest
+    type: manifest
+    steps:
+      - IN: ck_gitrepo
+
 #  - name: sample_node_runCI
 #    type: runCI
 #    steps:
