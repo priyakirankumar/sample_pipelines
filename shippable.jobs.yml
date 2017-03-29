@@ -13,6 +13,7 @@ jobs:
       - TASK:
         - script: sudo apt-get install tree
         - script: tree -F IN
+        - script: sleep 5m
     on_success:
       - script: echo "successfully completed"
 
@@ -31,6 +32,7 @@ jobs:
       - TASK:
         - script: echo CK_GITREPO_PATH
         - script: printenv
+        - script: sleep 5m
     flags:
       - runSh
 
