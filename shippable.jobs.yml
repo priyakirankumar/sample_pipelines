@@ -36,6 +36,18 @@ jobs:
     flags:
       - runSh
 
+  - name: ck-runSh-sample_node
+    type: runSh
+    steps:
+      - IN: ck_sample_node_gitrepo
+      - IN: time-trigger
+      - TASK:
+        - script: echo CK_GITREPO_PATH
+        - script: printenv
+        - script: sleep 1m
+    flags:
+      - runSh
+
   - name: ck-manifest
     type: manifest
     steps:

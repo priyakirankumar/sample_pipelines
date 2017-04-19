@@ -23,3 +23,16 @@ resources:
     pointer:
       sourceName: kanthchandra/coretest_prbuildprivate
       branch: "master"
+  # This time resource posts new versions for it, every 2 minutes
+  - name: time-trigger
+    type: time
+    seed:
+      interval: "*/2 * * * *"
+
+
+  - name: ck_sample_node_gitrepo
+    type: gitRepo
+    integration: kanthchandra-github
+    pointer:
+      sourceName: kanthchandra/sample_node
+      branch: "master"
