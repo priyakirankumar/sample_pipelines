@@ -9,11 +9,10 @@ jobs:
 
   - name: runSh-Job
     type: runSh
+    is_public: false
     steps:
       - TASK:
-        - script: sudo apt-get install tree
-        - script: tree -F IN
-        - script: sleep 5m
+        - script: sleep 1m
     on_success:
       - script: echo "successfully completed"
 
@@ -31,7 +30,6 @@ jobs:
       - IN: ck_gitrepo
       - TASK:
         - script: echo CK_GITREPO_PATH
-        - script: printenv
         - script: sleep 1m
     flags:
       - runSh
@@ -43,7 +41,6 @@ jobs:
       - IN: time-trigger
       - TASK:
         - script: echo CK_GITREPO_PATH
-        - script: printenv
         - script: sleep 1m
     flags:
       - runSh
