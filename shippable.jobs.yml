@@ -17,13 +17,13 @@ jobs:
     on_success:
       - script: echo "successfully completed"
 
-  - name: sample_pipelines_runCI
-    type: runCI
-    steps:
-      - IN: runSh-Job
-      - IN: params-resource
-      - IN: docker-integration
-      - OUT: nginx-image
+  # - name: sample_pipelines_runCI
+  #   type: runCI
+  #   steps:
+  #     - IN: runSh-Job
+  #     - IN: params-resource
+  #     - IN: docker-integration
+  #     - OUT: nginx-image
 
   - name: ck-runSh
     type: runSh
