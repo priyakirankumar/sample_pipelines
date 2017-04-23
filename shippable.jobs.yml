@@ -13,6 +13,7 @@ jobs:
     steps:
       - TASK:
         - script: sleep 1m
+        - script: echo "hi"
     on_success:
       - script: echo "successfully completed"
 
