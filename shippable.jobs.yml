@@ -32,7 +32,7 @@ jobs:
       - TASK:
         - script: echo CK_GITREPO_PATH
         - script: printenv
-        - script: sleep 5m
+        - script: sleep 1m
     flags:
       - runSh
 
