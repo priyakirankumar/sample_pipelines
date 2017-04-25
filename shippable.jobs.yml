@@ -28,7 +28,6 @@ jobs:
 
   - name: ck-runSh
     type: runSh
-    allowPublicAccess: true
     steps:
       - IN: ck_gitrepo
       - TASK:
