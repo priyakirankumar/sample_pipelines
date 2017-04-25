@@ -1,6 +1,7 @@
 jobs:
   - name: nginx-manifest
     type: manifest
+    allowPublicAccess: false
     steps:
       - IN: nginx-image
       - IN: runSh-Job
@@ -27,7 +28,6 @@ jobs:
 
   - name: ck-runSh
     type: runSh
-    allowPublicAccess: false
     steps:
       - IN: ck_gitrepo
       - TASK:
