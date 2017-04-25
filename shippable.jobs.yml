@@ -1,7 +1,6 @@
 jobs:
   - name: nginx-manifest
     type: manifest
-    allowPublicAccess: true
     steps:
       - IN: nginx-image
       - IN: runSh-Job
@@ -10,7 +9,7 @@ jobs:
 
   - name: runSh-Job
     type: runSh
-    allowPublicAccess: 'xyg'
+    allowPublicAccess: false
     steps:
       - TASK:
         - script: sleep 1m
