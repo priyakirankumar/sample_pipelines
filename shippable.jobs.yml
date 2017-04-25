@@ -9,7 +9,7 @@ jobs:
 
   - name: runSh-Job
     type: runSh
-    is_public: true
+    allowPublicAccess: true
     steps:
       - TASK:
         - script: sleep 1m
