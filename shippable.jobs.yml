@@ -2,5 +2,4 @@ jobs:
   - name: nginx-manifest
     type: manifest
     steps:
-      - IN: nginx-image
       - IN: sample-pipeline
