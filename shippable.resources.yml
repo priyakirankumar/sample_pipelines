@@ -1,12 +1,4 @@
 resources:
-  - name: nginx-image
-    type: image
-    integration: "docker-subint"
-    pointer:
-      sourceName: "library/nginx"
-    seed:
-      versionName: latest
-
   - name: sample-pipeline
     type: gitRepo
     integration: github-subint
