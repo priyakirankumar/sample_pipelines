@@ -1,7 +1,7 @@
 resources:
   - name: sample-pipeline
     type: gitRepo
-    integration: github-subint
+    integration: github
     pointer:
       sourceName: ankul-shippable/sample_pipelines
       branch: "bran/ch"
