@@ -3,3 +3,6 @@ jobs:
     type: manifest
     steps:
       - IN: sample-pipeline
+    flags:
+      - flag1
+      - flag2
