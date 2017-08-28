@@ -3,5 +3,5 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: ankul-shippable/sample_pipelines
+      sourceName: niranjan92/sample_pipelines
       branch: "bran/ch"
