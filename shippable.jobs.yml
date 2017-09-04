@@ -1,25 +1,78 @@
 jobs:
-  - name: nginx-manifest-1
-    type: manifest
+  - name: runSh_1
+    type: runSh
+    allowPublicAccess: true
     steps:
-      - IN: serial-trigger
-      - IN: nginx-image-prod81
-
-#  - name: runSh-Job
-#    type: runSh
-#    steps:
-#      - IN: nginx-manifest-1
-#      - TASK:
-#        - script: sudo apt-get install tree
-#        - script: tree -F IN
-#        - script: sleep 300
-#    on_success:
-#      - script: echo "successfully completed"
-#      - NOTIFY: hipchat-notifications
-
-  - name: do_something
+      - IN: nginx-image
+      - TASK:
+        - script: sleep 60
+        
+  - name: runSh_2
     type: runSh
     steps:
-      - IN: nginx-image-prod81
+      - IN: runSh_1
       - TASK:
-        - script: docker images | grep busybox
+        - script: sleep 1
+
+  - name: runSh_3
+    type: runSh
+    steps:
+      - IN: runSh_2
+      - TASK:
+        - script: sleep 1   
+        
+  - name: runSh_4
+    type: runSh
+    steps:
+      - IN: runSh_3
+      - TASK:
+        - script: sleep 1
+        
+  - name: runSh_5
+    type: runSh
+    steps:
+      - TASK:
+        - script: sleep 1           
+        
+  - name: runSh_6
+    type: runSh
+    steps:
+      - IN: runSh_5
+      - TASK:
+        - script: sleep 1
+        
+  - name: runSh_7
+    type: runSh
+    steps:
+      - IN: runSh_6
+      - TASK:
+        - script: sleep 1  
+        
+  - name: runSh_8
+    type: runSh
+    steps:
+      - TASK:
+        - script: sleep 1    
+        
+  - name: runSh_9
+    type: runSh
+    steps:
+      - IN: runSh_8
+      - TASK:
+        - script: sleep 1     
+        
+  - name: runSh_10
+    type: runSh
+    steps:
+      - TASK:
+        - script: sleep 1  
+        
+  - name: runSh_11
+    type: runSh
+    steps:
+      - IN: runSh_4
+      - IN: runSh_7
+      - IN: runSh_9
+      - IN: runSh_10      
+      - TASK:
+        - script: sleep 55
