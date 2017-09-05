@@ -72,7 +72,6 @@ jobs:
     steps:
       - IN: runSh_4
       - IN: runSh_7
-      - IN: runSh_9
-      - IN: runSh_10      
+      - IN: runSh_9   
       - TASK:
         - script: sleep 55
