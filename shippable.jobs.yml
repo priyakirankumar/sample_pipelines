@@ -1,4 +1,8 @@
 jobs:
+  - name: time-trigger
+    type: time
+    seed: "*/2 * * * *"
+
   - name: runSh_1
     type: runSh
     allowPublicAccess: true
