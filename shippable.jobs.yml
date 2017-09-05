@@ -1,7 +1,4 @@
 jobs:
-  - name: time-trigger
-    type: time
-    seed: "*/2 * * * *"
 
   - name: runSh_1
     type: runSh
@@ -29,6 +26,7 @@ jobs:
     type: runSh
     steps:
       - IN: runSh_3
+      - IN: time_trigger
       - TASK:
         - script: sleep 1
         
