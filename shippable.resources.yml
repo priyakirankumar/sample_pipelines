@@ -2,7 +2,7 @@ resources:
   - name: time-trigger
     type: time
     seed: 
-      interval: "*/2 * * * *"
+      interval: "*/1 * * * *"
 
   - name: nginx-image
     type: image
