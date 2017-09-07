@@ -12,7 +12,6 @@ jobs:
     type: runSh
     steps:
       - IN: runSh_1
-      - IN: ansible_ciRepo
       - TASK:
         - script: sleep 1
 
