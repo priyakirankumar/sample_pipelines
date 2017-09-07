@@ -14,6 +14,17 @@ jobs:
       - IN: runSh_1
       - TASK:
         - script: sleep 1
+    flags:
+        - flag1
+        - flag2
+        - flag3
+        - flag4
+        - flag5
+        - flag6
+        - flag7
+        - flag8
+        - flag9
+        - flag10
 
   - name: runSh_3
     type: runSh
