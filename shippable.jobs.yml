@@ -28,6 +28,11 @@ jobs:
       - TASK: managed
       - IN: trigger-dv-man
 
+- name: dv-man-versionName-1
+    type: manifest
+    steps:
+      - IN: dv-image      
+      
   - name: dv-man-versionNumber
     type: manifest
     steps:
