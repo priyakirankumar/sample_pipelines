@@ -32,7 +32,12 @@ jobs:
     type: manifest
     steps:
       - IN: dv-image      
-      
+
+- name: dv-man-versionName-2
+    type: manifest
+    steps:
+      - IN: dv-image      
+ 
   - name: dv-man-versionNumber
     type: manifest
     steps:
