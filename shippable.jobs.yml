@@ -7,6 +7,14 @@ jobs:
       - IN: nginx-image
       - TASK:
         - script: sleep 60
+
+  - name: runSh_1_test
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: nginx-image
+      - TASK:
+        - script: sleep 60
         
   - name: runSh_2
     type: runSh
