@@ -16,10 +16,10 @@ build:
     - printenv
     - cat /build/common.env
     
-integrations:
-  hub:
-    - integrationName: kanthchandra
-      type: docker
+#integrations:
+#  hub:
+#    - integrationName: kanthchandra
+#      type: docker
 #      recipients:
 #        - "#test-5148"
 #      on_start: always
